@@ -406,11 +406,11 @@ function CalcPrice(){
 	
 	$('.totalprice5').html('$'+ totalPrice5 );
 	$('.eachprice5').html('$'+(totalPrice5/5).toFixed(2));
-	$('.saveOpt5').html('$'+(regularPrice5 - totalPrice5).toFixed(0));
+	$('.saveOpt5').html('$'+(regularPrice5 - totalPrice5).toFixed(2));
 	
 	$('.totalprice3').html('$'+ totalPrice3 );
 	$('.eachprice3').html('$'+(totalPrice3/3).toFixed(2));
-	$('.saveOpt3').html('$'+(regularPrice3 - totalPrice3).toFixed(0));
+	$('.saveOpt3').html('$'+(regularPrice3 - totalPrice3).toFixed(2));
 	
 	$('.totalprice1, .eachprice1').html('$'+totalPrice1);
 }
@@ -425,12 +425,12 @@ $(document).ready(function(){
 			
 			$('.totalprice5').html('$'+((totalPrice5 - (totalPrice5*15)/100)).toFixed(2));
 			$('.eachprice5').html('$'+((totalPrice5 - (totalPrice5*15)/100)/5).toFixed(2));
-			$('.saveOpt5').html('$'+(regularPrice5 - (totalPrice5 - (totalPrice5*15)/100)).toFixed(0));
+			$('.saveOpt5').html('$'+(regularPrice5 - (totalPrice5 - (totalPrice5*15)/100)).toFixed(2));
 			
 			
 			$('.totalprice3').html('$'+((totalPrice3 - (totalPrice3*15)/100)).toFixed(2));
 			$('.eachprice3').html('$'+((totalPrice3 - (totalPrice3*15)/100)/3).toFixed(2));
-			$('.saveOpt3').html('$'+(regularPrice3 - (totalPrice3 - (totalPrice3*15)/100)).toFixed(0));
+			$('.saveOpt3').html('$'+(regularPrice3 - (totalPrice3 - (totalPrice3*15)/100)).toFixed(2));
 			
 			
 			$('.totalprice1, .eachprice1').html('$'+((totalPrice1 - (totalPrice1*15)/100)).toFixed(2));

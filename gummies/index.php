@@ -33,7 +33,6 @@ endif;
 </head>
 
 <body>
-    test
 <?php if(isset($_SESSION['errors'])): ?>
 <div style="background-color: #e41f1e;padding: 7px 0;"><ul><?php foreach($_SESSION['errors'] as $e){ echo '<li style="color: #fff;font-weight: 700;padding: 7px 0;">'.$e.'</li>'; }?></ul></div>
 <?php endif; ?>
