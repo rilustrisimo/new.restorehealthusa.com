@@ -79,6 +79,12 @@ class KON {
 		return $this->setCurlRequest($url, $this->data);
 	}
 
+    public function confirmOrder(){
+		$url = $this->baseUrl . "/order/confirm/";
+
+		return $this->setCurlRequest($url, $this->data);
+	}
+
 	public function prepareData($d){
 
 		$this->data = array();
