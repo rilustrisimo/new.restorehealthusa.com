@@ -1,0 +1,64 @@
+{
+    "base_url" : "https://api.konnektive.com",
+    "username" : "dev_api_restore",
+    "password" : "L!7R938%8v38m8u8",
+    "campaignId": 1,
+    "scrub": 15,
+    "qualify_page" : {
+        "type": "index",
+        "redirect" : "package.php",
+        "required" : {
+            "firstName": "First Name", 
+            "lastName": "Last Name", 
+            "phoneNumber": "Phone Number", 
+            "emailAddress": "Email Address"
+        }
+    },
+    "shipping_page" : {
+        "type": "index",
+        "redirect" : "payment.php",
+        "required" : {
+            "address1": "Address", 
+            "city": "City", 
+            "state": "State", 
+            "postalCode": "Zip Code"
+        }
+    },
+    "checkout_page" : {
+        "type": "checkout",
+        "redirect" : "upsell-1.php",
+        "required" : {
+            "cardNumber": "Card Number", 
+            "cardMonth": "Card Month Expiry", 
+            "cardYear": "Card Year Expiry", 
+            "cardSecurityCode": "CVV"
+        }
+    },
+    "upsell_page" : {
+        "up1": {
+            "redirect": "upsell-2.php",
+            "product_id": 4,
+            "product_qty": 6
+        },
+        "dn1": {
+            "redirect": "upsell-2.php",
+            "product_id": 5,
+            "product_qty": 4
+        },
+        "up2": {
+            "redirect": "thankyou.php",
+            "product_id": 6,
+            "product_qty": 4
+        },
+        "dn2": {
+            "redirect": "thankyou.php",
+            "product_id": 11,
+            "product_qty": 4
+        },
+        "dn3": {
+            "redirect": "thankyou.php",
+            "product_id": 7,
+            "product_qty": 3
+        }
+    }
+}
