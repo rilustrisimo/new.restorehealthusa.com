@@ -12,7 +12,7 @@ $order = $_SESSION['order_details'];
 $cbd_ids = array("1","2","3","4","5","8","9","10");
 
 $kon->prepareData(array("orderId" => $_SESSION['orderId']));
-var_dump($kon->confirmOrder());
+$kon->confirmOrder();
 
 ?>
 <!doctype html>
