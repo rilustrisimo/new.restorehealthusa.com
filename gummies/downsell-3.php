@@ -76,13 +76,13 @@ endif;
                     <div class="prcDv prcDvline">
                         <div class="rtl-prc">
                         	<p class="prc-txt">Retail Price:</p>
-                            <div class="float-prc1">$147 <img src="images/up-red-line.png" class="up-redcut"></div>
+                            <div class="float-prc1">$296 <img src="images/up-red-line.png" class="up-redcut"></div>
                         </div>
                     </div>
                     <div class="prcDv">
                         <div class="rtl-prc ofr-prc">
                         	<p class="prc-txt">Offer Price:</p>
-                            <div class="float-prc1">$16.33</div>
+                            <div class="float-prc1">$16.33<small>/ea</small></div>
                         </div>
                     </div>
                	</div>

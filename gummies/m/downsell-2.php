@@ -51,7 +51,7 @@
             <div class="prcDv prcDvline">
                 <div class="rtl-prc">
                     <p class="prc-txt">Retail Price:</p>
-                    <div class="float-prc1">$196 <img src="images/red-line.png" class="up-redcut"></div>
+                    <div class="float-prc1">$276 <img src="images/red-line.png" class="up-redcut"></div>
                 </div>
             </div>
             <div class="prcDv">
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <p class="up-tot-prc">Total Price: $98</p>
+        <p class="up-tot-prc">Total Price: $99</p>
         
         <div class="clearall"></div>
         <div class="btn-box">
