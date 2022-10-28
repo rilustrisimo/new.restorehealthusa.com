@@ -9,8 +9,6 @@ $cbd_ids = array("1","2","3","4","5","8","9","10");
 $kon->prepareData(array("orderId" => $_SESSION['orderId']));
 $kon->confirmOrder();
 
-var_dump($_SESSION);
-
 ?>
 <!doctype html>
 <html>
