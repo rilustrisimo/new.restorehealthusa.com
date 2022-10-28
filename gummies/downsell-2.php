@@ -62,7 +62,7 @@ endif;
     	<div class="up-s1-Box">
         	<div class="up-s1-lft">
             	<p class="ups1-txt1"><img src="images/fls-img.png" class="fls-img"> This Price Will Never Be Available Again!   <img src="images/fls-img.png" class="fls-img"></p>
-                <p class="ups1-txt2">Buy 2 + Get 2 Free  <br><span>For Just $24.75 Each</span></p>
+                <p class="ups1-txt2">Buy 2 + Get 2 Free  <br><span>Just <strike>$34.50</strike> $24.75 Each</span></p>
                 
                 
                 <ul class="up-s1-list">

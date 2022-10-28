@@ -32,7 +32,7 @@
     </div>
     <div class="up-sec1">
         <p class="ups1-txt1"><img src="images/fls-img.png" class="fls-img"> This Price Will Never Be Available Again!  <img src="images/fls-img.png" class="fls-img"></p>
-        <p class="ups1-txt2">Buy 2, Get 2 Free<span><br>For Just $24.75 Each</span></p>
+        <p class="ups1-txt2">Buy 2, Get 2 Free<span><br>Just <strike>$34.50</strike> $24.75 Each</span></p>
         
         <div class="up-blue-sec">
             <img src="images/up2-prod.png" class="up1-s1-prod"> 

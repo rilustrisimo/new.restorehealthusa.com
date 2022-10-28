@@ -81,11 +81,11 @@ endif;
                     <div class="prcDv">
                         <div class="rtl-prc ofr-prc">
                         	<p class="prc-txt">Offer Price:</p>
-                            <div class="float-prc1">$17.25<small>/ea</small></div>
+                            <div class="float-prc1">$17.49<small>/ea</small></div>
                         </div>
                     </div>
                	</div>
-                <p class="up-tot-prc">Total Price: $69</p>
+                <p class="up-tot-prc">Total Price: $69.99</p>
                 <div class="clearall"></div>
 				<div class="btn-box">
                     <a href="kon/process.php?page=upsell&step=dn1" class="packageBtn pulse getEmail">
