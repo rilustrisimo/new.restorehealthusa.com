@@ -2,7 +2,6 @@
 include_once('kon/konnektive.php');
 $kon = new KON();
 $kon->initSession();
-
 ?>
 <!doctype html>
 <html>
