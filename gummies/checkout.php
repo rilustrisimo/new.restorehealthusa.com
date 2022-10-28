@@ -404,7 +404,7 @@ function CalcPrice(){
 	$('.regularprice3').html('$'+regularPrice3);
 	$('.regularprice1').html('$'+regularPrice1);
 	
-	$('.totalprice5').html('$'+ totalPrice5 );
+	$('.totalprice5').html('$'+ totalPrice5.toFixed(2) );
 	$('.eachprice5').html('$'+(totalPrice5/5).toFixed(2));
 	$('.saveOpt5').html('$'+(regularPrice5 - totalPrice5).toFixed(2));
 	
