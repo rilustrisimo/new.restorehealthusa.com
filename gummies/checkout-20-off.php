@@ -186,7 +186,7 @@ endif;
                         <input type="hidden" name="expirationDate" id="expirationDate" value="">
                         <input type="hidden" name="creditCardType" id="creditCardType" value="">
                         <input type="hidden" name="paySource" id="paySource" value="CREDITCARD">
-                        <input type="hidden" name="couponCode" value="LESS10">
+                        <input type="hidden" name="couponCode" value="LESS20">
                         <input type="hidden" name="sessionId" value="<?php echo (is_null($_SESSION['sessionId']))?'':$_SESSION['sessionId']; ?>">
                         
                         <!-- affiliate records -->
