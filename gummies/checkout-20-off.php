@@ -430,6 +430,7 @@ $(document).ready(function(){
 		}else{
 			CalcPrice();
 		}
+        checkProduct();
 	});
 	
 	$('.packBoxOuter').click(function(e) {
@@ -440,17 +441,30 @@ $(document).ready(function(){
 		$(this).find('.packCheck').html('<img src="images/tik-blk.svg">');
 		$(this).find('.pack-btn').html('Selected');
 		bookmarkscroll.scrollTo('topForm');
+        checkProduct();
 	});
 	
 	
+	$('#togData').prop("checked", true);
+
+    setInterval(() => {
+        togDataChecker();
+    }, 500);
+	
 	$('.fieldToggle').click(function(){
-		if($('#togData').prop("checked") == false){
+		togDataChecker();
+	});
+
+    function togDataChecker() {
+        if($('#togData').prop("checked") == false){
 		   $('.shipaddress').slideDown();
+           $('#togData').val('0');
 		}
 		else if($('#togData').prop("checked") == true){
 		   $('.shipaddress').slideUp();
+           $('#togData').val('1');
 		}
-	});
+    }
 	
 
 	var spd = 100;
@@ -523,6 +537,37 @@ function openNewWindow(page_url, type, window_name, width, height, top, left, fe
         $('#app_common_modal').fadeIn();
     }
 
+}
+
+function checkProduct() {
+    var act = $('.packBoxOuter.active');
+
+    if(act.hasClass('pkg1')){
+        if($('.autoShipOpt').prop("checked") == true){
+            $('input[name="product1_id"]').val('10');
+        }else{
+            $('input[name="product1_id"]').val('3');
+        }
+        $('input[name="product1_qty"]').val('5');
+    }
+
+    if(act.hasClass('pkg2')){
+        if($('.autoShipOpt').prop("checked") == true){
+            $('input[name="product1_id"]').val('9');
+        }else{
+            $('input[name="product1_id"]').val('2');
+        }
+        $('input[name="product1_qty"]').val('3');
+    }
+
+    if(act.hasClass('pkg3')){
+        if($('.autoShipOpt').prop("checked") == true){
+            $('input[name="product1_id"]').val('8');
+        }else{
+            $('input[name="product1_id"]').val('1');
+        }
+        $('input[name="product1_qty"]').val('1');
+    }    
 }
 
 function isScrolledIntoView(elem) {
