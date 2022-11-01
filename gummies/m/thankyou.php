@@ -89,7 +89,7 @@ function getDate(days) {
                     </div>
                     
                     <div class="priceFlds">
-                        <div class="prc-row"><p>Sub Total:</p> <span>$<?php echo $order->subTotal; ?></span></div>
+                        <div class="prc-row"><p>Sub Total:</p> <span>$<?php echo (float)$order->subTotal + (float)$order->totalDiscount; ?></span></div>
                         <div class="prc-row"><p>Shipping &amp; Handling:</p> <span>$<?php echo $order->shipTotal; ?></span></div>
                         <div class="prc-row"><p>Total Discount:</p> <span>- $<?php echo $order->totalDiscount; ?></span></div>
                         <div class="prc-row total"><p>Total:</p> <span>$<?php echo $order->totalAmount;?></span></div>
