@@ -60,8 +60,6 @@ endif;
             	<div class="timer-strip"><img src="images/clock-ico.png" class="clock-ico">Limited Time Discount Reserved For 
                 <span id="stopwatch">05:00</span> <img src="images/timer-arw.png" class="timer-arw tadda"></div>
                 
-                
-                
                 <div class="packBoxOuter active pkg1" id="packageOne">
                     <div class="pcakHeader">
                         <div class="packCheck"><img src="images/tik-blk.svg"></div>

@@ -1,3 +1,13 @@
+<?php
+include_once('kon/konnektive.php');
+$kon = new KON();
+$kon->initSession();
+
+if($kon->mobileDetect() == "phone"):
+    header("Location: ./m");
+    exit();
+endif;
+?>
 <!doctype html>
 <html>
 <head>
@@ -24,6 +34,9 @@
 </head>
 
 <body>
+<?php if(isset($_SESSION['errors'])): ?>
+<div style="background-color: #e41f1e;padding: 7px 0;"><ul><?php foreach($_SESSION['errors'] as $e){ echo '<li style="color: #fff;font-weight: 700;padding: 7px 0;">'.$e.'</li>'; }?></ul></div>
+<?php endif; ?>
 <div class="top-strip">
     <div class="container">
         <p><span>WARNING:</span> Due to extremely high media demand, there is limited supply of <span>Restore CBD Gummies</span> in stock as of <script type="text/javascript">getDate(0);</script> <span>HURRY!</span></p>
@@ -47,7 +60,7 @@
             	<div class="timer-strip"><img src="images/clock-ico.png" class="clock-ico">Limited Time Discount Reserved For 
                 <span id="stopwatch">05:00</span> <img src="images/timer-arw.png" class="timer-arw tadda"></div>
                                 
-                <div class="packBoxOuter active" id="packageOne">
+                <div class="packBoxOuter active pkg1" id="packageOne">
                     <div class="pcakHeader">
                         <div class="packCheck"><img src="images/tik-blk.svg"></div>
                         <p class="packTitle">Buy 3 Bottles <span>+ Get 2 Free</span></p>
@@ -78,7 +91,7 @@
                     </div>
                 </div>
                 
-                <div class="packBoxOuter" id="packageTwo">
+                <div class="packBoxOuter pkg2" id="packageTwo">
                     <div class="pcakHeader">
                         <div class="packCheck"></div>
                         <p class="packTitle">Buy 2 Bottles <span>+ Get 1 Free</span></p>
@@ -109,7 +122,7 @@
                     </div>
                 </div>
                 
-                <div class="packBoxOuter package3" id="packageThree">
+                <div class="packBoxOuter package3 pkg3" id="packageThree">
                     <div class="pcakHeader">
                         <div class="packCheck"></div>
                         <p class="packTitle">Buy 1 Bottles</p>
@@ -160,30 +173,53 @@
                     </div>
                     <div class="limit-offer"><img src="images/frm-watch.png">Limited Time Offer <span id="stopwatch1"></span></div>
                     
-                    <form action="upsell-1.php" method="post" id="payment-form" class="noexirpop">
+                    <form action="kon/process.php" method="post" id="payment-form" class="noexirpop">
+                        <input type="hidden" name="page" value="checkout_page">
+                        <!-- product -->
+                        <input type="hidden" name="product1_qty" value="5">
+                        <input type="hidden" name="product1_id" value="3">
+                        <input type="hidden" name="product1_shipPrice" value="0">
+
+                        <!-- product end -->
+                        <input type="hidden" name="country" value="US">
+                        <input type="hidden" name="ipAddress" id="ipAddress" value="<?php echo $kon->getRealIP(); ?>">
+                        <input type="hidden" name="expirationDate" id="expirationDate" value="">
+                        <input type="hidden" name="creditCardType" id="creditCardType" value="">
+                        <input type="hidden" name="paySource" id="paySource" value="CREDITCARD">
+                        <input type="hidden" name="couponCode" value="LESS10">
+                        <input type="hidden" name="sessionId" value="<?php echo (is_null($_SESSION['sessionId']))?'':$_SESSION['sessionId']; ?>">
+                        
+                        <!-- affiliate records -->
+                        
+                        <input type="hidden" name="affId" id="affId" value="<?php echo (isset($_SESSION["affId"]) && ($_SESSION['scrub'] == false))?$_SESSION["affId"]:''; ?>">
+                        <input type="hidden" name="sourceValue1" id="sourceValue1" value="<?php echo (isset($_SESSION["c1"]) && ($_SESSION['scrub'] == false))?$_SESSION["c1"]:''; ?>">
+                        <input type="hidden" name="sourceValue2" id="sourceValue2" value="<?php echo (isset($_SESSION["c2"]) && ($_SESSION['scrub'] == false))?$_SESSION["c2"]:''; ?>">
+                        <input type="hidden" name="sourceValue3" id="sourceValue3" value="<?php echo (isset($_SESSION["c3"]) && ($_SESSION['scrub'] == false))?$_SESSION["c3"]:''; ?>">
+                        <input type="hidden" name="sourceValue4" id="sourceValue4" value="<?php echo (isset($_SESSION["c4"]) && ($_SESSION['scrub'] == false))?$_SESSION["c4"]:''; ?>">
+
                         <div class="frm-mdl">
                         	
                             <label class="fieldToggle">
-                                <input type="checkbox" name="togData" id="togData" checked="">
+                                <input type="checkbox" name="billShipSame" id="togData" checked value="1">
                                 <span class="togship"></span>
                                 Billing address same as shipping
                             </label>
                             
                             <div class="shipaddress" style="float:left; width:100%; display:none;">
                                 <div class="frmElemts">
-                                    <input type="text" placeholder="First Name*">
+                                    <input type="text" name="shipFirstName" placeholder="First Name*">
                                 </div>
                                 <div class="frmElemts">
-                                    <input type="text" placeholder="Last Name*">
+                                    <input type="text" name="shipLastName" placeholder="Last Name*">
                                 </div> 
                                 <div class="frmElemts">
-                                    <input type="text" placeholder="Address*">
+                                    <input type="text" name="shipAddress1" placeholder="Address*">
                                 </div>
                                 <div class="frmElemts">
-                                    <input type="text" placeholder="City*">
+                                    <input type="text" name="shipCity" placeholder="City*">
                                 </div>          
                                 <div class="frmElemts">
-                                    <select>
+                                    <select name="shipState">
                                         <option value="" onclick="" selected="">Select State</option>
                                         <option value="" onclick="">Alabama</option>
                                         <option value="AK" onclick="">Alaska (AK)</option>
@@ -253,28 +289,20 @@
                                 </div>
                                 
                                 <div class="frmElemts">
-                                    <input type="tel" placeholder="Zip Code*">
+                                    <input type="tel" name="shipPostalCode" placeholder="Zip Code*">
                                 </div> 
-                                
-                                <div class="frmElemts">
-                                    <input type="tel" placeholder="Phone*">
-                                </div>       
-                                
-                                <div class="frmElemts">
-                                    <input type="email" placeholder="Email Address*">
-                                </div>	
                             </div>
                             
                             <p class="accept-card-txt"><img src="images/accept-card.png" class="accept-card"></p>
                             
                             <div class="frmElemts">
                             	<label>Card Number</label>
-                                <input type="tel" id="billing_fname" name="billing_fname" value="" placeholder="Credit Card #">
+                                <input type="tel" id="billing_fname" name="cardNumber" value="" placeholder="Credit Card #" maxlength="16">
                             </div>
                             <div class="frmElemts hlf fl">
                                 <label>Expiry Date</label>
-                                <select class="field-all">
-                                    <option>Month</option>
+                                <select class="field-all" name="cardMonth">
+                                    <option value="">Month</option>
                                     <option value="01">January</option>
                                     <option value="02">February</option>
                                     <option value="03">March</option>
@@ -291,26 +319,26 @@
                             </div>
                             <div class="frmElemts hlf fr">
                                 <label>&nbsp;</label>
-                                <select class="field-all">
-                                    <option>Year</option>
-                                    <option value="22">2022</option>
-                                    <option value="23">2023</option>
-                                    <option value="24">2024</option>
-                                    <option value="25">2025</option>
-                                    <option value="26">2026</option>
-                                    <option value="27">2027</option>
-                                    <option value="28">2028</option>
-                                    <option value="29">2029</option>
-                                    <option value="30">2030</option>
+                                <select class="field-all" name="cardYear">
+                                    <option value="">Year</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
                                 </select>
                             </div>
                             <div class="frmElemts hlf" style="margin-top:8px;">
                             	<label>Security Code</label>
-                                <input type="tel" id="billing_fname" name="billing_fname" value="" placeholder="CVV Code">
+                                <input type="tel" id="billing_fname" name="cardSecurityCode" value="" placeholder="CVV Code" maxlength="3">
                             </div>
                             
                             <a href="javascript:void(0);" onclick="openNewWindow('cvv.php','modal');" class="what-is">What is this?</a>
-                            
+                            <!--
                             <label class="autoShipToggle">
                                 <input type="checkbox" name="autoShipOpt" class="autoShipOpt" id="autoShipOpt">
                                 <span class="togship"></span>
@@ -322,7 +350,7 @@
                                 </div>
                                 
                             </label>
-  
+                            -->
                             <button type="submit" class="submit pulse cpSubmit">Rush My Order<img src="images/btn-arw.png" alt="" class="btn-arw"></button>
                             <img src="images/frm-secur.png" alt="" class="frm-secur-log">
                         </div> 
@@ -410,6 +438,8 @@ $(document).ready(function(){
 		}else{
 			CalcPrice();
 		}
+
+        checkProduct();
 	});
 	
 	$('.packBoxOuter').click(function(e) {
@@ -420,17 +450,31 @@ $(document).ready(function(){
 		$(this).find('.packCheck').html('<img src="images/tik-blk.svg">');
 		$(this).find('.pack-btn').html('Selected');
 		bookmarkscroll.scrollTo('topForm');
+
+        checkProduct();
 	});
 	
 	
+    $('#togData').prop("checked", true);
+
+    setInterval(() => {
+        togDataChecker();
+    }, 500);
+	
 	$('.fieldToggle').click(function(){
-		if($('#togData').prop("checked") == false){
+		togDataChecker();
+	});
+
+    function togDataChecker() {
+        if($('#togData').prop("checked") == false){
 		   $('.shipaddress').slideDown();
+           $('#togData').val('0');
 		}
 		else if($('#togData').prop("checked") == true){
 		   $('.shipaddress').slideUp();
+           $('#togData').val('1');
 		}
-	});
+    }
 	
 	//EXIT POPUP JS
 	$('a').click(function(){
@@ -535,6 +579,37 @@ function openNewWindow(page_url, type, window_name, width, height, top, left, fe
         $('#app_common_modal').fadeIn();
     }
 
+}
+
+function checkProduct() {
+    var act = $('.packBoxOuter.active');
+
+    if(act.hasClass('pkg1')){
+        if($('.autoShipOpt').prop("checked") == true){
+            $('input[name="product1_id"]').val('10');
+        }else{
+            $('input[name="product1_id"]').val('3');
+        }
+        $('input[name="product1_qty"]').val('5');
+    }
+
+    if(act.hasClass('pkg2')){
+        if($('.autoShipOpt').prop("checked") == true){
+            $('input[name="product1_id"]').val('9');
+        }else{
+            $('input[name="product1_id"]').val('2');
+        }
+        $('input[name="product1_qty"]').val('3');
+    }
+
+    if(act.hasClass('pkg3')){
+        if($('.autoShipOpt').prop("checked") == true){
+            $('input[name="product1_id"]').val('8');
+        }else{
+            $('input[name="product1_id"]').val('1');
+        }
+        $('input[name="product1_qty"]').val('1');
+    }    
 }
 
 function isScrolledIntoView(elem) {
