@@ -498,7 +498,18 @@ if(exitMessage){
 		}
 	}
 	window.onbeforeunload = pageUnload;
-	}
+
+    setTimeout(() => {
+        $(document).on("mouseout", evt => {
+            if(evt.toElement === null && evt.relatedTarget === null) {
+                $(evt.currentTarget).off("mouseout");
+                // An intent to exit has happened
+
+                pageUnload();
+            }
+        });
+    }, 5000);
+}
 	
 	
 	$('.pop-close').click(function(e) {
