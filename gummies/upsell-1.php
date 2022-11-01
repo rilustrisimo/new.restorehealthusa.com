@@ -6,6 +6,7 @@ if($kon->mobileDetect() == "phone"):
     header("Location: ./m");
     exit();
 endif;
+
 ?>
 <!doctype html>
 <html>
