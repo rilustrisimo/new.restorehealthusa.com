@@ -11,6 +11,8 @@ endif;
 $order = $_SESSION['order_details'];
 $cbd_ids = array("1","2","3","4","5","8","9","10");
 
+var_dump($order);
+
 $kon->prepareData(array("orderId" => $_SESSION['orderId']));
 $kon->confirmOrder();
 
