@@ -23,9 +23,6 @@ else:
         $_SESSION['order_details'] = $result->message;
 
         if($result->result == "SUCCESS"):
-            $kon->prepareData(array("orderId" => $_SESSION['orderId']));
-            $kon->confirmOrder();
-            
             header("location: ../" . $config[$_POST['page']]['redirect']);
         else:
             $kon->setErrors($result->message);
