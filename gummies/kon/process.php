@@ -46,7 +46,7 @@ else:
 
         $kon->prepareData($_SESSION);
         $result = json_decode($kon->importUpsale());
-
+var_dump($result);
         $_SESSION['order_details'] = $result->message;
         
         header("location: ../" . $up_redirect);
