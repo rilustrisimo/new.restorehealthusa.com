@@ -19,7 +19,10 @@ else:
         $result = json_decode($kon->importOrder());
 
         $_SESSION['orderId'] = $result->message->orderId;
-        $_SESSION['order_details'] = $result->message;
+        
+        if($result->result == "SUCCESS"):
+            $_SESSION['order_details'] = $result->message;
+        endif;
 
         if($result->result == "SUCCESS"):
             header("location: ../" . $config[$_POST['page']]['redirect']);
@@ -46,8 +49,10 @@ else:
 
         $kon->prepareData($_SESSION);
         $result = json_decode($kon->importUpsale());
-var_dump($result);
-        $_SESSION['order_details'] = $result->message;
+
+        if($result->result == "SUCCESS"):
+            $_SESSION['order_details'] = $result->message;
+        endif;
         
         header("location: ../" . $up_redirect);
     else:
