@@ -53,7 +53,7 @@ endif;
     <div class="container">
         <p class="up-hdng-txt1" style="font-size:30px;"><img src="images/left-arw.png" class="left-arw tadda"> <span>Wait! How About All 4 For Just $24.75/ea?
  </span> <img src="images/rgt-arw.png" class="rgt-arw taddaR"></p>
-        <p class="up-hdng-txt2">Add 2 Bottles of CBD + Melatonin Gummies & <span>Get 2 Bottles Free!</span></p>
+        <p class="up-hdng-txt2">Add 2 Bottles of Ashwagandha Gummies & <span>Get 2 Bottles Free!</span></p>
     </div>
 </div>
 
@@ -66,10 +66,10 @@ endif;
                 
                 
                 <ul class="up-s1-list">
-                	<li>Help Relax Mind & Body Quickly</li>
-                    <li>Restores Healthy Sleep Cycles</li> 
-                    <li>Promotes Deep REM Sleep</li> 
-                    <li>Boosts Morning Energy & Alertness</li>  
+                	<li>Helps Relax Mind & Body Quickly</li>
+                    <li>Promotes Healthy Sleep Cycles</li> 
+                    <li>Restores The Body</li> 
+                    <li>Wake Up Refreshed</li>  
                 </ul>
                 <div class="clearall"></div>
                 <div class="save-strip"><img src="images/up-tymtk.png" class="up-tymtk"> <p> Your FREE Bottles Reserved For <img src="images/wtch.png" class="wtch"> <span id="stopwatch">00:00</span> Minutes</p></div>

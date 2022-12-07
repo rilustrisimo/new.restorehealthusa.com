@@ -27,8 +27,8 @@
     <div class="clearall"></div>
 
 	<div class="up-top-hdng up-top-hdng2">
-        <p class="hdng-txt1 up2-hdng-txt1"><span>Last Chance To Improve Your<br>Sleep & Morning Energy!</span></p>
-        <p class="hdng-txt2">Add 2 Bottles of CBD + Melatonin Gummies & Get <span>2 Bottles Free!</span></p>
+        <p class="hdng-txt1 up2-hdng-txt1"><span>Last Chance To Improve Your<br>Sleep & Stress Levels!</span></p>
+        <p class="hdng-txt2">Buy 1 Just Bottle of Ashwagandha Gummies & <span>2 Bottles Free!</span></p>
     </div>
     <div class="up-sec1">
         <p class="ups1-txt1"><img src="images/fls-img.png" class="fls-img"> This Price Will Never Be Available Again!  <img src="images/fls-img.png" class="fls-img"></p>
@@ -39,9 +39,9 @@
         </div>
         
         <ul class="up-s1-list">
-            <li>Probiotics for Memory Enhancement</li>
-            <li>Support the Gut - Brain Axis</li> 
-            <li>Defeat Brain Fog</li> 
+            <li>Fall Asleep Faster & Easier</li>
+            <li>Body, Mind and Sleep Support</li> 
+            <li>Wake Up Fresh and Calm</li> 
             <li>Buy 1 GET 1 FREE!</li>  
         </ul>
         

@@ -27,8 +27,8 @@
     <div class="clearall"></div>
 
 	<div class="up-top-hdng">
-        <p class="hdng-txt1 up2-hdng-txt1"><span>Wait! Try It Today & Save Even More!</span></p>
-        <p class="hdng-txt2">Add 2 Bottles of CBD + Melatonin Gummies <br>& <span>Get 2 Bottles Free!</span></p>
+        <p class="hdng-txt1 up2-hdng-txt1"><span>Wait! How About All 4 For Just $24.75/ea? </span></p>
+        <p class="hdng-txt2">Add 2 Bottles of Ashwagandha Gummies <br>& <span>Get 2 Bottles Free!</span></p>
     </div>
     <div class="up-sec1">
         <p class="ups1-txt1"><img src="images/fls-img.png" class="fls-img"> This Price Will Never Be Available Again!  <img src="images/fls-img.png" class="fls-img"></p>
@@ -39,10 +39,10 @@
         </div>
         
         <ul class="up-s1-list">
-            <li>Help Relax Mind & Body Instantly</li>
-            <li>Restores Healthy Sleep Cycles</li> 
-            <li>Promotes Deep REM Sleep</li> 
-            <li>Boosts Morning Energy & Alertness</li>  
+            <li>Helps Relax Mind & Body Quickly</li>
+            <li>Promotes Healthy Sleep Cycles</li> 
+            <li>Restores The Body</li> 
+            <li>Wake Up Refreshed</li>  
         </ul>
         
         <div class="save-strip"><img src="images/up-tymtk.png" class="up-tymtk"> <p>Your FREE Bottles Reserved For <img src="images/wtch.png" class="wtch"> <span id="stopwatch">10:40</span> Minutes</p></div>

@@ -51,8 +51,8 @@ endif;
 
 <div class="up-top-hdng">
     <div class="container">
-        <p class="up-hdng-txt1"><span>Last Chance To Improve Your Sleep & Morning Energy! </span></p>
-        <p class="up-hdng-txt2">Buy 1 Just Bottle of CBD + Melatonin Gummies & <span>Get 2 More Free!</span></p>
+        <p class="up-hdng-txt1"><span>Last Chance To Improve Your Sleep & Stress Levels! </span></p>
+        <p class="up-hdng-txt2">Buy 1 Just Bottle of Ashwagandha Gummies & <span>Get 2 More Free!</span></p>
     </div>
 </div>
 
@@ -65,9 +65,9 @@ endif;
                 
                 
                 <ul class="up-s1-list">
-                	<li>Fall Asleep Quickly</li>
-                    <li>Brain, Body and Sleep Support</li> 
-                    <li>Wake Up Fresh, with Less Pain</li> 
+                	<li>Fall Asleep Faster & Easier</li>
+                    <li>Body, Mind and Sleep Support</li> 
+                    <li>Wake Up Fresh and Calm</li> 
                     <li>Buy 1 GET 2 FREE!</li>  
                 </ul>
                 <div class="clearall"></div>
