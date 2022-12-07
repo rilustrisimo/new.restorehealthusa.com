@@ -51,9 +51,9 @@ endif;
 
 <div class="up-top-hdng">
     <div class="container">
-        <p class="up-hdng-txt1" style="font-size:30px;"><img src="images/left-arw.png" class="left-arw tadda"> <span>Want Healthy & Restful Sleep, Every Night?
+        <p class="up-hdng-txt1" style="font-size:30px;"><img src="images/left-arw.png" class="left-arw tadda"> <span>Want To Reduce Stress and Wake Up Refreshed With An Ancient Indian Herb?
  </span> <img src="images/rgt-arw.png" class="rgt-arw taddaR"></p>
-        <p class="up-hdng-txt2">Add Our CBD + Melatonin Nighttime Gummies Designed to <br>Help You Fall Asleep, Stay Asleep & Wake Up Refreshed! <span>Get 2 Free! </span></p>
+        <p class="up-hdng-txt2">Add Our Ashwagandha Gummies Now, Designed to <br>Help You Relax Easier, Sleep Better and Feel Better In Just Seconds A Day! <span>Get 2 Free! </span></p>
     </div>
 </div>
 
@@ -67,9 +67,9 @@ endif;
                 
                 <ul class="up-s1-list">
                 	<li>Helps Relax Mind & Body Quickly</li>
-                    <li>Restores Healthy Sleep Cycles</li> 
-                    <li>Promotes Deep REM Sleep</li> 
-                    <li>Boosts Morning Energy & Alertness</li>  
+                    <li>Promotes Healthy Sleep Cycles</li> 
+                    <li>Restores The Body</li> 
+                    <li>Wake Up Refreshed</li>  
                 </ul>
                 <div class="clearall"></div>
                 <div class="save-strip"><img src="images/up-tymtk.png" class="up-tymtk"> <p> Your FREE Bottles Reserved For <img src="images/wtch.png" class="wtch"> <span id="stopwatch">00:00</span> Minutes</p></div>

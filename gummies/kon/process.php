@@ -14,7 +14,7 @@ else:
     $pagetype = (isset($_GET['page']))?$_GET['page']:$config[$_POST['page']]['type'];
 
     if($pagetype == "checkout"):
-        $_SESSION['couponCode'] = "SGTEST99";// for testing and remove when done
+        //$_SESSION['couponCode'] = "SGTEST99";// for testing and remove when done
         $kon->prepareData($_SESSION);
         $result = json_decode($kon->importOrder());
 
