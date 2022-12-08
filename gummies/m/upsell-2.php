@@ -27,7 +27,7 @@
     <div class="clearall"></div>
     
 	<div class="up-top-hdng">
-        <p class="hdng-txt1"><span>This 6000-Year Old Indian Herb Helps Relieve Stress, Sleep  <br>and Mood Concerns In A Delicious Nighttime Gummy </span></p>
+        <p class="hdng-txt1"><span>This 6000-Year Old Indian Herb Helps Relieve Stress, Sleep and Mood Concerns In A Delicious Nighttime Gummy </span></p>
         <p class="hdng-txt2">Add These Breakthrough Ashwagandha Gummies To Your Order To Relax Easier, Sleep Better, and Wake Up Refreshed. Try Now and <span>Get 2 FREE Bottles On Us !</span></p>
     </div>
     <div class="up-sec1">
