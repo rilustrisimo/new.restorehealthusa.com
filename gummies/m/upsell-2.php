@@ -27,8 +27,8 @@
     <div class="clearall"></div>
     
 	<div class="up-top-hdng">
-        <p class="hdng-txt1"><span>Want To Reduce Stress and <br>Wake Up Refreshed With An Ancient Indian Herb? </span></p>
-        <p class="hdng-txt2">Add Our Ashwagandha Gummies Now, Designed to Help You Relax Easier, Sleep Better and Feel Better In Just Seconds A Day! <span>Get 2 Free!</span></p>
+        <p class="hdng-txt1"><span>This 6000-Year Old Indian Herb Helps Relieve Stress, Sleep  <br>and Mood Concerns In A Delicious Nighttime Gummy </span></p>
+        <p class="hdng-txt2">Add These Breakthrough Ashwagandha Gummies To Your Order To Relax Easier, Sleep Better, and Wake Up Refreshed. Try Now and <span>Get 2 FREE Bottles On Us !</span></p>
     </div>
     <div class="up-sec1">
         <p class="ups1-txt1"><img src="images/fls-img.png" class="fls-img"> This Price Will Never Be Available Again!  <img src="images/fls-img.png" class="fls-img"></p>
