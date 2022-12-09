@@ -27,12 +27,12 @@
     <div class="clearall"></div>
     
 	<div class="up-top-hdng">
-        <p class="hdng-txt1"><span>This 6000-Year Old Indian Herb Helps Relieve Stress, Sleep and Mood Concerns In A Delicious Nighttime Gummy </span></p>
-        <p class="hdng-txt2">Add These Breakthrough Ashwagandha Gummies To Your Order To Relax Easier, Sleep Better, and Wake Up Refreshed. Try Now and <span>Get 2 FREE Bottles On Us !</span></p>
+        <p class="hdng-txt1"><span>This <i>6000-Year Old Indian Herb</i> Helps Relieve Stress, Sleep and Mood Concerns In A Delicious Nighttime Gummy </span></p>
+        <p class="hdng-txt2">Add These <u>Breakthrough Ashwagandha Gummies</u> To Your Order To Relax Easier, Sleep Better, and Wake Up Refreshed. Try Now and <span>Get 2 FREE Bottles On Us !</span></p>
     </div>
     <div class="up-sec1">
         <p class="ups1-txt1"><img src="images/fls-img.png" class="fls-img"> This Price Will Never Be Available Again!  <img src="images/fls-img.png" class="fls-img"></p>
-        <p class="ups1-txt2">Buy 2, Get 2 Free<span><br>For Just $34.50 Each</span></p>
+        <p class="ups1-txt2">Buy 2, <u>Get 2 Free</u><span><br>For Just $34.50 Each</span></p>
         <div class="up-blue-sec">
             <img src="images/up2-prod.png" class="up1-s1-prod">  	
         </div>
