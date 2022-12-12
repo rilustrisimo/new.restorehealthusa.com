@@ -51,7 +51,7 @@ endif;
 
 <div class="up-top-hdng">
     <div class="container">
-        <p class="up-hdng-txt1" style="font-size:30px;"><img src="images/left-arw.png" class="left-arw tadda"> <span><i>This 6000-Year Old Indian Herb</i> Helps Relieve Stress, Sleep <br>and Mood Concerns In A Delicious Nighttime Gummy </span> <img src="images/rgt-arw.png" class="rgt-arw taddaR"></p>
+        <p class="up-hdng-txt1" style="font-size:30px;"><img src="images/left-arw.png" class="left-arw tadda"> <span>This 6000-Year Old Indian Herb Helps Relieve Stress, Sleep <br>and Mood Concerns In A Delicious Nighttime Gummy </span> <img src="images/rgt-arw.png" class="rgt-arw taddaR"></p>
         <p class="up-hdng-txt2">Add These <u>Breakthrough Ashwagandha Gummies</u> To Your Order To Relax Easier, Sleep <br>Better, and Wake Up Refreshed. Try Now and <span>Get 2 FREE Bottles On Us ! </span></p>
     </div>
 </div>
