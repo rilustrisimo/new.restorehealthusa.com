@@ -3,7 +3,7 @@
     "username" : "dev_api_restore",
     "password" : "L!7R938%8v38m8u8",
     "campaignId": 1,
-    "scrub": 15,
+    "scrub": 25,
     "qualify_page" : {
         "type": "index",
         "redirect" : "package.php",
