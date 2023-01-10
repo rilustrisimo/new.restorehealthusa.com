@@ -218,8 +218,8 @@ endif;
                 </div>
                 <div class="s3-bx">
                     <img src="images/s3-icn6.png" alt="" class="s3-icn">
-                    <h3>Weight Loss</h3>
-                    <p>Reduces emotional food cravings <br>& boosts mood to support weight <br>loss efforts with a healthy lifestyle. </p>
+                    <h3>Healthy Mood</h3>
+                    <p>Boosts mood,<br>helps reduce stress and more, <br>to support a healthy lifestyle </p>
                 </div>
             </div>
         </div>
